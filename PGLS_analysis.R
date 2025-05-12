@@ -2,7 +2,7 @@ require(ape)
 require(MCMCglmm)
 
 #### Load FMR database ####
-
+dir <- "C:/Users/juanv/Dropbox/Talento CAM/Field metabolic rates/Assessing the energetic impacts of climate change on biodiversity (2022-T1AMB-23753)/Manuscript/Code and Data"
 dir <- "..."
 data <- read.csv(paste0(dir,"/FMR_database.csv"), sep=";")
 
@@ -10,16 +10,15 @@ data <- read.csv(paste0(dir,"/FMR_database.csv"), sep=";")
 
 phylo <- read.tree(paste0(dir,"/FritzTree_mammals_consensus.tre")) # Consensus tree for mammals (Fritz et al. 2009)
 
-data_mammals_pgls <- data.frame(Species=data$Species[which(data$Class=="Mammalia")], 
-                                 FMR_Watt=data$FMR_Watt[which(data$Class=="Mammalia")], 
-                                 FMR_M=data$FMR_M[which(data$Class=="Mammalia")], 
+data_mammals_pgls <- data.frame(Species=data$Species, 
+                                 FMR_Watt=data$FMR_Watt, 
+                                 FMR_M=data$FMR_M, 
                                  FMR_M_ind_simul=FMR_M_ind_simul, 
                                  FMR_ind_simul=FMR_ind_simul,
-                                 Mass=data$Mass[which(data$Class=="Mammalia")],
-                                 LocationCode=data$LocationCode[which(data$Class=="Mammalia")], 
-                                 TALOCmean=data$TALOCmean[which(data$Class=="Mammalia")],
-                                 TMEAN=data$TMEAN[which(data$Class=="Mammalia")], 
-                                 Tanomalies=data$Tanomalies[which(data$Class=="Mammalia")])
+                                 Mass=data$Mass,
+                                 TALOCmean=data$TALOCmean,
+                                 TMEAN=data$TMEAN, 
+                                 Tanomalies=data$Tanomalies)
 data_mammals_pgls <- data_mammals_pgls[complete.cases(data_mammals_pgls),] # Remove NAs
 
 data_mammals_pgls$animal <- "not in tree"

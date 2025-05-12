@@ -32,7 +32,7 @@ VEL = 0.1 # wind speed
 
 # FMR data
 dir <- "C:/Users/juanv/Dropbox/Talento CAM/Field metabolic rates/Assessing the energetic impacts of climate change on biodiversity (2022-T1AMB-23753)/Manuscript/Code and Data"
-data <- read.csv(paste0(dir,"/FMR_database.csv"), sep=";")
+data <- read.csv(paste0(dir,"/FMR_database.csv"), sep=",")
 
 # Get mean annual temperature
 global_climate <- raster::brick("C:/globalclimate/global_climate.nc") # New et al. 1999
