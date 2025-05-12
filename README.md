@@ -34,6 +34,51 @@ other attached packages:
      Fritz, S. A., Bininda‐Emonds, O. R., & Purvis, A. (2009). Geographical variation in predictors of mammalian extinction risk: big is bad, but only in the tropics. Ecology letters, 12(6), 538-549.
      https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fj.1461-0248.2009.01307.x&file=ELE_1307_sm_SA1.tre
 
+ # Data description (columns)
+"Class": Taxonomic classification (string)       
+"Order": Taxonomic classification (string)        
+"Family": Taxonomic classification (string)  
+"Genus": Taxonomic classification (string)  
+"Species": Taxonomic classification (string)  
+"Mass": Body mass (g)
+"Lat_deg": Latitude (deg) 
+"Lon_deg": Longitude (deg)      
+"Elevation": Elevation (m)    
+"Date_original": Date of measurement
+"Date_start": Starting date of DLW measurement
+"Date_end": End date of DLW measurement    
+"Jan": Month included in DWL average (0 - 1)         
+"Feb"          
+"Mar"     
+"Apr"      
+"May"         
+"Jun"      
+"Jul"     
+"Aug"          
+"Sep"   
+"Oct"    
+"Nov"      
+"Dec"      
+"Year1": Year included in DWL average
+"Year2"        
+"Year3" 
+"Year4"    
+"FMR_Watt": FMR value (W)
+"FMR_kJday": FMR value (kJ/day)
+"TAREFmean": Air temperature at the time and location of FMR measurement (ºC) - reference height (1.2m)
+"TALOCmean": Air temperature at the time and location of FMR measurement (ºC) - individual height 
+"SOLRAD": Solar radiation at the time and location of FMR measurement (W/m2) 
+"RHREFmean": Relative humidity at the time and location of FMR measurement (%) - reference height (1.2m) 
+"RHLOCmean": Relative humidity at the time and location of FMR measurement (%) - individual height  
+"FMR_M": Mass specific FMR (residuals) 
+"Tanomalies": Temperature anomaly (ºC) 
+"TMEAN": Mean temperature of the month of FMR measurement (ºC)        
+"Reference": Complete reference for FMR data
+
+
+
+ 
+
    
 
 
